@@ -101,7 +101,7 @@ class RestProviderController extends AbstractFOSRestController
         }
         return new JsonResponse(
             [
-                'error' => 'provider with name ' . $body["provider"] .', product ' . $body["product"] .' and product variation ' . $body["productVariation"]. ' could not be found!'
+                'error' => 'provider with name ' . $body["name"] .', product ' . $body["product"] .' and product variation ' . $body["productVariation"]. ' could not be found!'
             ]);
 
     }
